@@ -5,3 +5,5 @@ Usage:
 ```sh
 $ python main.py
 ```
+# Licenes
+Licened under the MIT licenes.

@@ -1,0 +1,59 @@
+<!----- Mir Immad - LiveCam ---->
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD> 
+		<TITLE>RealTime Camera</TITLE>
+		<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}" type="text/css">
+		<link rel="stylesheet" href="{{url_for('static',filename='css/sticky-footer.css')}}" type="text/css">
+		<meta name="author" content="Mir Immad">
+		<meta name="viewport" content="width=device-width, intial-scale=1, user-scalable=no">
+	</HEAD>
+	<script src="{{url_for('static',filename='js/jquerymin.js')}}" ></script>
+	<script src="{{url_for('static',filename='js/bootstrap.min.js')}}" ></script>
+	
+<BODY>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">RealTime Camera</a>
+        </div>
+       
+      </div>
+    </nav>
+<div class="container"><br>
+		<div class="page-header"><center><h1>RealTime Camera</h1></center>
+		
+		</div>
+		<center><p>We let you to monitor your device's camera in real-time for fun or security purposes.</p></center>
+</div>
+<div class="container">
+	<center>
+		<img src="{{url_for('video_feed')}}" class="img-responsive" style="">
+	
+		   
+	</center>
+	
+	
+</div><br/>
+<div class="container">
+<div class="alert alert-success" role="alert" id="locationTrack">
+		
+	
+</div>
+</div>
+<footer class="footer">
+      <div class="container">
+          <p class="text-muted"><b>Built</b> with  &#9829; by <b>Mir Immad</b> </p>
+      </div>
+    </footer>
+</BODY>
+
+
+
+</HTML>
